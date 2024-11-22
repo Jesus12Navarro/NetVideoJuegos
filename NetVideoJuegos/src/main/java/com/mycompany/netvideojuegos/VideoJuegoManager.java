@@ -52,7 +52,7 @@ public class VideoJuegoManager implements Acciones<VideoJuego> {
         // Filtrar videojuegos por género sin importar mayúsculas o minúsculas
         List<VideoJuego> resultado = new ArrayList<>();
         for (VideoJuego v : videojuegos) {
-            if (v.getPlataforma().equalsIgnoreCase(genero)) {
+            if (v.getPlataforma().equalsIgnoreCase(plataforma)) {
                 resultado.add(v);
             }
         }
