@@ -17,7 +17,7 @@ public class NetVideoJuegos {
         manager.agregar(new VideoJuego(2, "Call of Duty: Modern Warrfare III", 656.00, "Shots", "Ps4"));
         manager.agregar(new VideoJuego(3, "God of War", 645.00, "Fights", "Ps4"));
         manager.agregar(new VideoJuego(4, "Super Mario Party Jamboree", 526.00, "MultiPlayer", "Switch"));
-        manager.agregar(new VideoJuego(3, "Dragon Ball FighterZ", 296.00, "Fights", "Switch"));
+        manager.agregar(new VideoJuego(5, "Dragon Ball FighterZ", 296.00, "Fights", "Switch"));
 
         System.out.println("Listado de videojuegos:");
         manager.consultar().forEach(System.out::println);
@@ -27,7 +27,7 @@ public class NetVideoJuegos {
         manager.buscarPorGenero("Sports").forEach(System.out::println);
 
         System.out.println("\nVideojuegos de Plataforma 'Switch':");
-        manager.buscarPorGenero("Switch").forEach(System.out::println);
+        manager.buscarPorPlataforma("Switch").forEach(System.out::println);
 
         
         System.out.println("\nActualizando precio del videojuego ID 2:");
