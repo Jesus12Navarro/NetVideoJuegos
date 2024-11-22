@@ -77,6 +77,11 @@ public class VideoJuegoManager implements Acciones<VideoJuego> {
     }
 
     @Override
+    public List<VideoJuego> buscarVideoJuegoPorPlataforma(String plataforma) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
     public Object getGenero() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
