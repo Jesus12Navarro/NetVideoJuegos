@@ -15,6 +15,7 @@ public interface Acciones<J> {
     void agregar(J producto);
     List<J> consultar();
     List<J> buscarVideoJuegoPorGenero(String genero);
+    List<J> buscarVideoJuegoPorPlataforma(String plataforma);
     void actualizarPrecio(int id, double nuevoPrecio);
     void eliminar(int id);
 
