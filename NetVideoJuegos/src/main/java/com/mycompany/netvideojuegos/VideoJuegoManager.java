@@ -45,6 +45,19 @@ public class VideoJuegoManager implements Acciones<VideoJuego> {
         }
         return resultado;
     }
+    public List<VideoJuego> buscarPorPlataforma(String plataforma) {
+        if (videojuegos.isEmpty()) {
+            throw new IllegalStateException("No hay videojuegos registrados en esta plataforma.");
+        }
+        // Filtrar videojuegos por género sin importar mayúsculas o minúsculas
+        List<VideoJuego> resultado = new ArrayList<>();
+        for (VideoJuego v : videojuegos) {
+            if (v.getPlataforma().equalsIgnoreCase(genero)) {
+                resultado.add(v);
+            }
+        }
+        return resultado;
+    }
 
     @Override
     public void actualizarPrecio(int id, double nuevoPrecio) {
